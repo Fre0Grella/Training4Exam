@@ -35,7 +35,7 @@ public class Test {
 	
 	@org.junit.Before
 	public void initFactory() {
-		//this.rwf = new RWControllersFactoryImpl();
+		this.rwf = new RWControllersFactoryImpl();
 	}
 
 	@org.junit.Test
