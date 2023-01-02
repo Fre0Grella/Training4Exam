@@ -2,7 +2,6 @@ package a01a.e2;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.random.RandomGenerator;
 
 public class LogicImpl implements Logic {
@@ -40,7 +39,8 @@ public class LogicImpl implements Logic {
 
     @Override
     public boolean isOver() {
-        return shootHistory.containsAll(boat) || shootHistory.stream().filter(x -> boat.contains(x)).toList().size() >= MAXTRY;
+
+        return shootHistory.containsAll(boat) || shootHistory.stream().filter(x -> !boat.contains(x)).toList().size() >= MAXTRY;
     }
-    
+    //
 }
