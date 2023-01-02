@@ -1,4 +1,4 @@
-a01a/ done (manca GUI)
+a01a/ done
 a01b/
 a02a/ done 
 a02b/
